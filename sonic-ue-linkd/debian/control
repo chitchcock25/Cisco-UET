@@ -1,0 +1,17 @@
+Source: sonic-ue-linkd
+Section: net
+Priority: optional
+Maintainer: SONiC Team <sonic-dev@microsoft.com>
+Build-Depends: debhelper (>= 12),
+               libswsscommon-dev,
+               libsairedis-dev
+Standards-Version: 4.1.3
+
+Package: sonic-ue-linkd
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends},
+         libswsscommon,
+         libsairedis
+Description: SONiC Ultra Ethernet Link Layer Daemon
+ Provides Link Layer Retry (LLR) and Packet Rate Improvement (PRI)
+ functionality for Ultra Ethernet networks.
